@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gallery App</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="shortcut icon" href="./icons/icon.webp" type="image/x-icon">
+</head>
+
+<body>
+<h3 align="center" style="padding: 10px;border-bottom: 1px solid blue;" >Photo gallery app</h3>
+  <!-- gallery is going to be a container to organize images -->
+  <div id="gallery" class="gallery">
+    <div class="spinner">Loading Images...</div>
+  </div>
+
+<!-- model container will show large image  -->
+  <div id="modal" style="display: none;" class="modal">
+    <p id="image_name" style="color: white;">Image name</p>
+    <img src="" id="image1" />
+    <button id="prevBtn" onclick="prevImage()" title="Previous Image"><img src="./icons/previous.png" /></button>
+    <button id="closeBtn" onclick="closeModal()" title="Close"><img src="./icons/close.png" /></button>
+    <button id="nextBtn" onclick="nextImage()" title="Next Image"><img src="./icons/next.png" /></button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
